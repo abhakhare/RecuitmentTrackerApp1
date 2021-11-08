@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="RegisterViewModel"
+            type="com.example.recuitmenttrackerapp1.ViewModel.RegisterViewModel" />
+    </data>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:background="@drawable/gradient"
+        android:layout_height="match_parent"
+        android:isScrollContainer="true">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".View.RegisterActivity">
+
+
+
+            <EditText
+                android:id="@+id/txtname"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="100dp"
+                android:ems="10"
+                android:padding="10dp"
+                android:hint="Name"
+                android:inputType="text"
+                android:textColor="@android:color/black"
+                android:background="@drawable/edittext"
+                android:textColorHint="@android:color/darker_gray"
+                android:text="@={RegisterViewModel.name}"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <EditText
+                android:id="@+id/txtEmail"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:ems="10"
+                android:hint="Email"
+                android:padding="10dp"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/darker_gray"
+                android:inputType="textEmailAddress"
+                android:background="@drawable/edittext"
+                android:text="@={RegisterViewModel.email}"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtname" />
+
+            <EditText
+                android:id="@+id/txtnumber"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:ems="10"
+                android:hint="Number"
+                android:padding="10dp"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/darker_gray"
+                android:inputType="number"
+                android:background="@drawable/edittext"
+                android:text="@={RegisterViewModel.number}"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtEmail" />
+            <EditText
+                android:id="@+id/txtPassword"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:ems="10"
+                android:hint="Password"
+                android:padding="10dp"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/darker_gray"
+                android:inputType="textPassword"
+                android:background="@drawable/edittext"
+                android:text="@={RegisterViewModel.password}"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtnumber" />
+
+            <EditText
+                android:id="@+id/txtconfirmpassword"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:ems="10"
+                android:hint="Confirm Password"
+                android:padding="10dp"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/darker_gray"
+                android:inputType="textPassword"
+                android:background="@drawable/edittext"
+                android:text="@={RegisterViewModel.confirmpassword}"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtPassword" />
+
+            <Button
+                android:id="@+id/btnRegister"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="32dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"
+                android:text="@string/register"
+                android:onClick="@{(v)->RegisterViewModel.onClick(v)}"
+                android:textSize="18sp"
+                android:textColor="@android:color/white"
+                android:background="@drawable/logintext"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtconfirmpassword" />
+
+            <TextView
+                android:id="@+id/loginback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/not_register"
+                android:textColor="@color/colorPrimary"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:onClick="onClick"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnRegister" />
+
+
+
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</layout>

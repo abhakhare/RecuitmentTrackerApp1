@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Recruitment Tracker</string>
+    <string name="Text1">Button_1</string>
+    <string name="hr">HR</string>
+    <string name="home">Home</string>
+    <string name="interviewer">Interviewer</string>
+    <string name="management">Management</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="login">Login</string>
+    <string name="create_new">Click here for register</string>
+    <string name="not_register">Not Register?</string>
+    <string name="name">Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="register">Register</string>
+    <string name="forgot">Forgot password?</string>
+    <string name="name_error">Please enter your name</string>
+    <string name="phone_error">Please enter your phone number</string>
+    <string name="email_error">Please enter your email address</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="password_error">Please enter a password</string>
+    <string name="error_invalid_password">Please enter a minimum password of 6 characters</string>
+    <string name="submit">SUBMIT</string>
+    <string name="back">BACK</string>
+    <string name="registered_emailid">Please enter your Registered Email Id below:</string>
+    <string name="drawer_open">Open navigation drawer</string>
+
+    <string name="drawer_close">Close navigation drawer</string>
+
+
+    <string-array name="navigation_drawer_items_array">
+        <item>Home</item>
+        <item>HR</item>
+        <item>Interviewer</item>
+        <item>Management</item>
+    </string-array>
+</resources>
